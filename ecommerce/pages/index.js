@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { Product, HeroBanner, FooterBanner } from '@/components';
 
 const Home = () => {
   return (
@@ -11,20 +12,20 @@ const Home = () => {
           <link rel="shortcut icon" href="/favicon.png" />
         </Head>
     {/* Hero Banner */}
-        HeroBanner
+        <HeroBanner />
 
     {/* Product Details */}
-      <div>
-        <h2> No.1 Gems & Jewellery Marketplace </h2>
-        <p> In addition to its world-renowned rubies and jadeites, Myanmar has produced several other interesting gemstone materials. The Mogok Stone Tract has produced spinel, apatite, scapolite, moonstone, zircon, garnet, iolite and amethyst gemstones. </p>
+      <div className='products-heading'>
+        <h2> No.1 Gems Digital Marketplace </h2>
+        <p> In addition to its world-renowned rubies and jadeites, Burma has produced several other interesting gemstone materials. The Mogok Stone Tract has produced spinel, apatite, scapolite, moonstone, zircon, garnet, iolite and amethyst gemstones. </p>
       </div>
       
-      <div>
+      <div className='products-container'>
         {['Peridot', 'Emerald', 'Sapphire', 'Tourmaline'].map((product) => product)}
       </div>
       
     {/* Footer */}
-      Footer
+      <FooterBanner />
     </>
   )
 }
