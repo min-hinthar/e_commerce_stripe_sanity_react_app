@@ -7,6 +7,10 @@ const Footer = () => {
       <p>
         ©️ 2023 Mandalay Star Gemstones | All Rights Reserved
       </p>
+      <p className='icons'>
+        <AiFillInstagram />
+        <AiOutlineTwitter />
+      </p>
     </div>
   )
 }
