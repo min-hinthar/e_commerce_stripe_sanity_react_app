@@ -144,7 +144,7 @@ width: 100%;
 .hero-banner-container button{
    border-radius: 15px;
   padding: 10px 16px;
-  background-color: #f02d34;
+  background-color: 	#9B111E;
   color: white;
   border: none;
   margin-top: 40px;
@@ -229,11 +229,11 @@ text-align: end;
   border-radius: 15px;
   padding: 10px 16px;
   background-color: white;
-  color: red;
+  color: #046307dc;
   border: none;
-  margin-top: 40px;
-  font-size: 18px;
-  font-weight: 500;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 800;
   cursor: pointer;
 }
 .banner-desc .left h3{
@@ -246,10 +246,12 @@ text-align: end;
 }
 .footer-banner-image{
   position: absolute;
+  width: 500px;
+  height: 500px;
   /* top: -35%;
   left: 8%; */
-  top: -25%;
-  left: 25%;
+  top: -45%;
+  left: 30%;
 }
 .banner-desc .right{
   line-height: 1.4;
@@ -299,12 +301,14 @@ text-align: end;
   justify-content: center;
 
 }
+
 .footer-container .icons{
   font-size: 30px;
   display: flex;
   gap: 10px;
 }
- .cart-heading{
+
+.cart-heading{
   display: flex;
   align-items: center;
   font-size: 18px;
@@ -633,10 +637,10 @@ margin-top: 160px;
     margin-top: 80px;
   }
   .footer-banner-image{
-    width: 77%;
+    width: 400px;
     left: 30%;
     top: 6%;
-    height: 56%
+    height: 400px;
   }
   .banner-desc .left h3{
     font-weight: 900;
