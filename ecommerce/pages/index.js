@@ -8,14 +8,14 @@ const Home = ({ products, bannerData }) => {
   return (
     <> 
         <Head>
-          <title> Mandalay Star Marketplace </title>
+          <title> Mandalay Star Gemstones </title>
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" key='title'/>
           <link rel="shortcut icon" href="/favicon.png" />
         </Head>
     {/* Hero Banner */}
-        <HeroBanner />
-        {console.log(bannerData)}
+        <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
+
     {/* Product Details */}
       <div className='products-heading'>
         <h2> No.1 Gems Digital Marketplace </h2>
@@ -24,7 +24,6 @@ const Home = ({ products, bannerData }) => {
       
       <div className='products-container'>
         {products?.map((product) => product.name)}
-        {console.log(products)}
       </div>
       
     {/* Footer */}
