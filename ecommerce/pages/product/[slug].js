@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 
@@ -9,22 +9,24 @@ const ProductDetails = ({ product, products }) => {
 
     const { image, name, details, price } = product;
 
+    const [ index, setIndex ] = useState(0)
+
   return (
     <div>
         <div className='product-detail-container'>
             <div>
                 <div className='image-container'>
-                    <img src={urlFor(image && image[0])} style={{width: 500, height: 500, borderRadius: 10,}}/>
+                    <img src={urlFor(image && image[index])} style={{width: 500, height: 500, borderRadius: 10,}} className='product-detail-image'/>
                 </div>
-                {/* <div className='small-images-container'>
+                <div className='small-images-container'>
                     {image?.map((item, i) => (
                         <img 
                             src={urlFor(item)}
-                            className=''
-                            onMouseEnter=''
+                            className={i === index ? 'small-image selected-image' : 'small-image'}
+                            onMouseEnter={() => setIndex(i)}
                         />
                     ))}
-                </div> */}
+                </div>
             </div>
         {/* Descriptions */}
             <div className='product-detail-desc'>
