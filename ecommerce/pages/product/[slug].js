@@ -3,6 +3,7 @@ import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 
 import { client, urlFor } from '@/lib/client';
+import { Product } from '../../components';
 
 const ProductDetails = ({ product, products }) => {
 
@@ -13,7 +14,7 @@ const ProductDetails = ({ product, products }) => {
         <div className='product-detail-container'>
             <div>
                 <div className='image-container'>
-                    <img src={urlFor(image && image[0])}/>
+                    <img src={urlFor(image && image[0])} style={{width: 500, height: 500, borderRadius: 10,}}/>
                 </div>
                 {/* <div className='small-images-container'>
                     {image?.map((item, i) => (
@@ -71,6 +72,19 @@ const ProductDetails = ({ product, products }) => {
                     </button>
                 </div>
             </div>
+        </div>
+    {/* May Also Like Products Suggestions */}
+        <div className='maylike-products-wrapper'>
+                <h2>
+                    Our Finest Collections 💎
+                </h2>
+                <div className='marquee'>
+                    <div className='maylike-products-container track'>
+                        {products.map((item) => (
+                            <Product key={item._id} product={item} />
+                        ))}
+                    </div>
+                </div>
         </div>
     </div>
   )

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
+import { AiFillInstagram, AiOutlineTwitter, AiFillFacebook } from 'react-icons/ai'
 
 const Footer = () => {
   return (
@@ -8,8 +8,9 @@ const Footer = () => {
         ©️ 2023 Mandalay Star Gemstones | All Rights Reserved
       </p>
       <p className='icons'>
-        <AiFillInstagram />
-        <AiOutlineTwitter />
+        <AiFillInstagram  className='instagram'/>
+        <AiOutlineTwitter className='twitter'/>
+        <AiFillFacebook className='facebook'/>
       </p>
     </div>
   )
