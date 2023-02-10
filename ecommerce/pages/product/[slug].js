@@ -4,12 +4,15 @@ import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 
 import { client, urlFor } from '@/lib/client';
 import { Product } from '../../components';
+import { useStateContext } from '../../context/StateContext'
 
 const ProductDetails = ({ product, products }) => {
 
     const { image, name, details, price } = product;
 
-    const [ index, setIndex ] = useState(0)
+    const [ index, setIndex ] = useState(0);
+
+    const { decQty, incQty, qty } = useStateContext();
 
   return (
     <div>
@@ -60,9 +63,9 @@ const ProductDetails = ({ product, products }) => {
                         Quantity:
                     </h3>
                     <p className='quantity-desc'>
-                        <span className='minus' onClick=''><AiOutlineMinus /></span>
-                        <span className='num' onClick=''>0</span>
-                        <span className='plus' onClick=''><AiOutlinePlus /></span>
+                        <span className='minus' onClick={decQty}><AiOutlineMinus /></span>
+                        <span className='num'>{qty}</span>
+                        <span className='plus' onClick={incQty}><AiOutlinePlus /></span>
                     </p>
                 </div>
                 <div className='buttons'>
