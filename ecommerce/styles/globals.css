@@ -307,7 +307,7 @@ text-align: end;
   float: right;
   padding: 40px 10px;
   position: relative;
-  
+  border-radius: 0.5rem;
 }
 
 .footer-container{
