@@ -1,3 +1,4 @@
+import product from '@/ecommerce/schemas/product';
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { toast } from 'react-hot-toast';
 
@@ -37,6 +38,15 @@ export const StateContext = ({ children }) => {
             setCartItems([...cartItems, { ...product }]);
         }
         toast.success(`🥳 ${qty} Qty of ${product.name} added to cart 🎉`);
+    }
+
+    const onRemove = (product) => {
+        foundProduct = cartItems.find((item) => item._id === product._id);
+        const newCartItems = cartItems.filter((item) => item._id !== product._id);
+        
+        setTotalPrice((prevTotalPrice) => prevTotalPrice - foundProduct.price * foundProduct.quantity);
+        setTotalQuantities((prevTotalQuantities) => prevTotalQuantities - foundProduct.quantity);
+        setCartItems(newCartItems);
     }
 
     const toggleCartItemQuantity = (id, value) => {
@@ -94,7 +104,8 @@ export const StateContext = ({ children }) => {
             incQty,
             decQty,
             onAdd,
-            toggleCartItemQuantity
+            toggleCartItemQuantity,
+            onRemove
         }}
     >
         {children}
