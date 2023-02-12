@@ -6,7 +6,15 @@ import { useStateContext } from '@/context/StateContext';
 
 const Success = () => {
 
-    const { setCardItems, setTotalPrice, setTotalQuantities } = useStateContext();
+    const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
+
+    useEffect(() => {
+        localStorage.clear();
+        setCartItems([]);
+        setTotalPrice(0);
+        setTotalQuantities(0);
+    }, [])
+    
 
     return (
         <div className='success-wrapper'>
