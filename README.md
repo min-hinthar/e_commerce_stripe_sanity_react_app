@@ -1,8 +1,12 @@
-# Project Title: [ E_Commerce_Stripe_Sanity_React_App ]
+# Project Title: [ E_Commerce_Stripe_Sanity_NextJS_App ]
 
-Deployed on Netlify Live URL: [ ]
+Deployed on Vercel Live URL: [ https://e-commerce-stripe-sanity-nextjs-app.vercel.app/ ]
 
-![App Screenshots](./frontend_react/src/assets/portfolio_1.jpg)
+![App Screenshots](./ecommerce/public/static/gems_1.jpeg)
+![App Screenshots](./ecommerce/public/static/gems_2.jpeg)
+![App Screenshots](./ecommerce/public/static/gems_3.jpeg)
+![App Screenshots](./ecommerce/public/static/gems_4.jpeg)
+![App Screenshots](./ecommerce/public/static/gems_5.jpeg)
 
 ## Table of Contents
 1. [Description](#description)
@@ -16,13 +20,12 @@ Deployed on Netlify Live URL: [ ]
 -----
 
 ### Description 
-This React.js e-commerce application will provide a modern design and animations to create an engaging user experience. It will include the ability to add and edit products on the go using a Sanity studio backend management system and Next.js for backend endpoints/server-side rendering and static generation. The application will also include all advanced cart and checkout functionalities, such as the ability to add multiple items to the cart, apply discounts, and calculate taxes. Most importantly, the application will be completely integrated with Stripe so that users can make real payments. The application will also be optimized for mobile devices, ensuring a smooth and seamless experience for users regardless of the device they are using. Finally, the application will be secured with SSL encryption to ensure the safety and security of all user data.
+This Next.js e-commerce application will provide a modern design and animations to create an engaging user experience. It will include the ability to add and edit products on the go using a Sanity studio backend management system and Next.js for backend endpoints/server-side rendering and static generation. The application will also include all advanced cart and checkout functionalities, such as the ability to add multiple items to the cart, apply discounts, and calculate taxes. Most importantly, the application will be completely integrated with Stripe so that users can make real payments. The application will also be optimized for mobile devices, ensuring a smooth and seamless experience for users regardless of the device they are using. Finally, the application will be secured with SSL encryption to ensure the safety and security of all user data.
 
 
 -----
 
 ### Installation
-React.js,
 
 Next.js,
 
@@ -82,7 +85,7 @@ MIT
 
 -----
 
-Deployed on Netlify Live URL: [  ]
+Deployed on Vercel Live URL: [ https://e-commerce-stripe-sanity-nextjs-app.vercel.app/ ]
 
 ### Questions 
 
